@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle del proyecto">
+    <title>Proyecto | Gustavo Adolfo Tobías Ramírez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="index.html" class="nav__logo" aria-label="Inicio">
+                <span class="nav__logo-text">GTR</span>
+            </a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Alternar menú">
+                <span class="nav__toggle-icon" aria-hidden="true"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav__link" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="proyectos.html" class="nav__link nav__link--active" role="menuitem">Proyectos</a></li>
+                <li role="none"><a href="noticias.html" class="nav__link" role="menuitem">Noticias</a></li>
+                <li role="none"><a href="index.html#contacto" class="nav__link" role="menuitem">Contacto</a></li>
+                <li role="none">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar modo oscuro" type="button">
+                        <svg class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="5" fill="currentColor"/>
+                            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </g>
+                        </svg>
+                        <svg class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" role="main">
+        <section class="section" aria-labelledby="project-title">
+            <div class="container blog-detail" id="project-detail">
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="container">
+                <div class="cta__card">
+                    <h2 class="cta__title">¿Te interesa este proyecto?</h2>
+                    <p class="cta__description">Todo el código está disponible en GitHub. También puedes contactarme directamente para más detalles.</p>
+                    <div class="cta__actions">
+                        <a href="proyectos.html" class="btn btn--primary">Ver todos los proyectos</a>
+                        <a href="mailto:tobiasgusito@gmail.com" class="btn btn--secondary">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo" aria-label="Inicio">
+                    <span class="footer__logo-text">GTR</span>
+                </a>
+                <p class="footer__tagline">Desarrollador Fullstack · Tech Lead · Project Manager</p>
+                <p class="footer__copyright">© <span id="year"></span> Gustavo Adolfo Tobías Ramírez. Construido con HTML, CSS y JS vanilla.</p>
+            </div>
+            <nav class="footer__nav" aria-label="Enlaces rápidos">
+                <h4 class="footer__nav-title">Navegación</h4>
+                <ul class="footer__nav-list" role="list">
+                    <li><a href="index.html" class="footer__nav-link">Inicio</a></li>
+                    <li><a href="proyectos.html" class="footer__nav-link">Proyectos</a></li>
+                    <li><a href="noticias.html" class="footer__nav-link">Noticias</a></li>
+                    <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__nav" aria-label="Proyectos destacados">
+                <h4 class="footer__nav-title">Proyectos</h4>
+                <ul class="footer__nav-list" role="list">
+                    <li><a href="proyectos.html#batirrover" class="footer__nav-link">Batirrover</a></li>
+                    <li><a href="proyectos.html#datacenter" class="footer__nav-link">Datacenter Funcional</a></li>
+                    <li><a href="proyectos.html#robot-busqueda" class="footer__nav-link">Robot Búsqueda</a></li>
+                    <li><a href="proyectos.html#api-compilador" class="footer__nav-link">API + Compilador UM++</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <h4 class="footer__nav-title">Conectar</h4>
+                <ul class="footer__social-list" role="list">
+                    <li><a href="mailto:tobiasgusito@gmail.com" class="footer__social-link" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+                    <li><a href="https://github.com/OmegaKerveus7" class="footer__social-link" aria-label="GitHub Principal" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></li>
+                    <li><a href="https://github.com/ZelderD-12" class="footer__social-link" aria-label="GitHub Secundario" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/project-detail.js"></script>
+</body>
+</html>

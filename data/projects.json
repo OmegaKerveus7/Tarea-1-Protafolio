@@ -1,0 +1,68 @@
+[
+    {
+        "id": "batirrover",
+        "title": "Batirrover",
+        "shortDescription": "Rover autónomo para exploración con arquitectura modular, control de motores, navegación autónoma y comunicación serial. Incluye pipeline API Python + Compilador Java + UM++.",
+        "description": "<p>Batirrover es un proyecto de robótica autónoma donde diseñé la arquitectura completa de un rover para exploración. El sistema se compone de múltiples capas: control de motores DC con encoders, navegación basada en sensores ultrasónicos e IMU, comunicación serial con una estación base, y un pipeline de alto nivel para enviar instrucciones.</p><p>La innovación principal es el pipeline <strong>API Python → Compilador Java (UM++) → Comandos robot</strong>. Desarrollé un lenguaje propio llamado UM++ con tipado estático, inferencia de tipos y pattern matching. El compilador escrito en Java genera AST, realiza análisis semántico y produce bytecode que la API en Python interpreta para enviar comandos al rover vía WebSockets.</p><p>Lideré un equipo de 4 personas, coordinando sprints semanales, code reviews y gestión de riesgos.</p>",
+        "period": "Febrero – Marzo 2025",
+        "role": "Arquitecto de Sistema + Fullstack Developer + Team Lead (4 personas)",
+        "category": "robotics",
+        "stack": ["C++", "Python", "ROS", "Arduino", "ESP32", "Java", "UM++"],
+        "innovation": "Pipeline completo: Lenguaje UM++ → Compilador Java → API Python → Comandos al robot",
+        "images": ["imgweb/batirover.jpeg", "imgweb/desarrollo_rover.jpeg"],
+        "repos": [
+            { "name": "PF-LFA (Código Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" },
+            { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador UM++)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "datacenter",
+        "title": "Datacenter Funcional + Software de Gestión",
+        "shortDescription": "Maqueta física funcional de datacenter con rack, servidores, UPS y refrigeración, más un software completo de gestión con monitoreo en tiempo real.",
+        "description": "<p>Proyecto dual: una maqueta física funcional de un datacenter a escala con rack, servidores Raspberry Pi, sistema de UPS, sensores de temperatura y refrigeración activa, combinado con un software de gestión web desarrollado desde cero.</p><p>El software incluye: monitoreo de recursos en tiempo real (CPU, RAM, temperatura), sistema de inventario de equipos, alertas configurables, dashboard con gráficos interactivos y logging de eventos. Backend en Python con Flask, frontend en HTML/CSS/JS vanilla, base de datos SQLite.</p><p>Infraestructura física: cableado estructurado categoría 6, distribución de energía, gestión térmica, y panel frontal con LEDs de estado.</p>",
+        "period": "Febrero – Marzo 2025 (paralelo a Batirrover)",
+        "role": "Arquitecto de Infraestructura + Fullstack Developer + Team Lead",
+        "category": "infrastructure",
+        "stack": ["Python", "Flask", "Linux", "Docker", "HTML", "CSS", "JavaScript", "SQLite", "Raspberry Pi", "Redes"],
+        "innovation": "Integración de infraestructura física (rack, servidores, cableado) con software de gestión web en tiempo real",
+        "images": ["imgweb/datacentermaketafuncional.jpeg"],
+        "repos": [
+            { "name": "Datacenter_Grupo3- (Código completo)", "url": "https://github.com/OmegaKerveus7/Datacenter_Grupo3-.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "robot-busqueda",
+        "title": "Robot de Búsqueda con Evitación de Obstáculos",
+        "shortDescription": "Robot autónomo para búsqueda de objetos con evitación de obstáculos en tiempo real. Control remoto desde Python con interfaz gráfica. Arquitectura modular multicapa.",
+        "description": "<p>Robot autónomo diseñado para buscar objetos en entornos desconocidos mientras evade obstáculos dinámicamente. La arquitectura se organiza en capas: sensores (ultrasónicos e IR), control de motores (PID), navegación (algoritmo de evasión basado en máquina de estados), y comunicación (serial con la estación base).</p><p>Desarrollé el firmware en C/C++ para Arduino/ESP32 con scheduling cooperativo, y una aplicación de control remoto en Python con interfaz gráfica (Tkinter) que permite visualizar datos de sensores en tiempo real, enviar waypoints y recibir video streaming.</p><p>La capa de navegación implementa una máquina de estados con transiciones: Exploración → Obstáculo detectado → Evasión → Reanudar búsqueda → Objeto encontrado → Retroalimentación.</p>",
+        "period": "Proyecto Final – Electrónica Digital",
+        "role": "Arquitecto de Sistema + Fullstack Developer (Firmware + Control Remoto) + Team Lead",
+        "category": "robotics",
+        "stack": ["C/C++", "Python", "Arduino", "ESP32", "Sensores Ultrasónicos", "Sensores IR", "PID Control"],
+        "innovation": "Arquitectura multicapa con máquina de estados para navegación autónoma + interfaz de control remoto en Python",
+        "images": ["imgweb/robot_de_busqueda_yebacion.jpeg"],
+        "repos": [
+            { "name": "Proyecto-Final-Electrónica-Digital (Código completo)", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "api-compilador",
+        "title": "API Python + Compilador Java + Lenguaje UM++",
+        "shortDescription": "Pipeline completo para control remoto del Batirrover: lenguaje UM++ (creación propia), compilador en Java con AST y análisis semántico, API en Python con WebSockets.",
+        "description": "<p>Proyecto transversal que conecta compiladores con robótica. Creé un lenguaje de programación llamado <strong>UM++</strong> con tipado estático, inferencia de tipos, pattern matching y sintaxis similar a Rust/C++. El compilador escrito en Java construye un AST (Abstract Syntax Tree), realiza análisis semántico y genera bytecode de alto nivel.</p><p>La API en Python (FastAPI + WebSockets) recibe el bytecode, lo interpreta y envía comandos de bajo nivel al Batirrover vía comunicación serial. Esto permite escribir programas en UM++ que se compilan y ejecutan directamente en el robot.</p><p>El pipeline completo: Editor de código → Código UM++ → Compilador Java → Bytecode → API Python → Comandos serial → Robot.</p>",
+        "period": "Febrero – Marzo 2025 (integrado con Batirrover)",
+        "role": "Diseñador de Lenguaje + Compilador Developer + API Developer",
+        "category": "compilers",
+        "stack": ["Java", "Python", "FastAPI", "WebSockets", "ANTLR", "AST", "Arduino", "Serial Communication"],
+        "innovation": "Lenguaje de programación propio (UM++) con compilador en Java integrado a API Python para control robótico en tiempo real",
+        "images": ["imgweb/batirover.jpeg", "imgweb/desarrollo_rover.jpeg"],
+        "repos": [
+            { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" },
+            { "name": "PF-LFA (Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" }
+        ],
+        "featured": true
+    }
+]

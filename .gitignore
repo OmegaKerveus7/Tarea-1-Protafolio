@@ -1,0 +1,11 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+*.sublime-*
+
+# Cache
+__pycache__/
+*.pyc

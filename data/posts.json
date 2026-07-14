@@ -1,0 +1,101 @@
+[
+    {
+        "slug": "lanzamiento-portafolio",
+        "title": "Lanzamiento de mi Portafolio Profesional",
+        "date": "2025-07-14",
+        "category": "personal",
+        "categoryLabel": "Personal",
+        "excerpt": "Presento mi nuevo portafolio profesional construido completamente con HTML, CSS y JavaScript vanilla. Sin frameworks, sin CMS, sin base de datos. Rápido, seguro y 100% controlable.",
+        "content": "<p>Después de semanas de trabajo, finalmente lanzo mi portafolio profesional. La decisión técnica fue clara desde el inicio: <strong>HTML + CSS + JavaScript vanilla</strong>. Sin WordPress, sin React, sin base de datos. Un sitio estático puro.</p><h2>¿Por qué estático?</h2><p>Rendimiento superior (Lighthouse > 95), seguridad inherente (sin backend que atacar), costo cero de hosting (GitHub Pages), control total sobre cada línea de código. Además, el contenido se gestiona mediante archivos JSON, lo que permite actualizar proyectos y noticias sin tocar el HTML.</p><h2>Stack técnico</h2><ul><li>HTML5 semántico con ARIA para accesibilidad</li><li>CSS3 con variables, Grid, Flexbox y modo oscuro</li><li>JavaScript ES6+ con IntersectionObserver, History API y fetch</li><li>Hosting en GitHub Pages con dominio personalizado</li><li>Google Analytics para métricas básicas</li></ul><p>El sitio incluye tres secciones principales: Presentación (Acerca de mí), Proyectos Universitarios (con 4 proyectos documentados) y Noticias (blog técnico). Todo el código está abierto en GitHub.</p>",
+        "tags": ["portafolio", "html", "css", "javascript", "github-pages"],
+        "image": "imgweb/image.png",
+        "relatedLinks": [
+            { "title": "Repositorio del Portafolio", "url": "https://github.com/OmegaKerveus7/portfolio" },
+            { "title": "GitHub Pages Documentation", "url": "https://pages.github.com" }
+        ]
+    },
+    {
+        "slug": "batirrover-arquitectura-umpp",
+        "title": "Batirrover: Arquitectura Modular + Lenguaje UM++",
+        "date": "2025-07-10",
+        "category": "project",
+        "categoryLabel": "Proyectos",
+        "excerpt": "Detalle técnico del Batirrover: arquitectura en capas, pipeline de compilación UM++ y cómo el compilador Java se conecta con la API Python para controlar el robot en tiempo real.",
+        "content": "<p>El Batirrover es mi proyecto más ambicioso: un rover autónomo con un pipeline completo de compilación que conecta un lenguaje de programación propio (UM++) con un robot físico.</p><h2>Arquitectura en capas</h2><p>El sistema se divide en cuatro capas principales:</p><ol><li><strong>Capa de usuario:</strong> Editor de código donde se escribe en UM++</li><li><strong>Capa de compilación:</strong> Compilador Java que genera AST, análisis semántico y bytecode</li><li><strong>Capa de API:</strong> Servidor Python (FastAPI + WebSockets) que interpreta el bytecode</li><li><strong>Capa física:</strong> Firmware en Arduino/ESP32 que ejecuta comandos de bajo nivel</li></ol><h2>Lenguaje UM++</h2><p>UM++ es un lenguaje de tipado estático con inferencia, pattern matching, y sintaxis inspirada en Rust y C++. Algunas características:</p><pre><code>fn mover(direccion: Direccion, distancia: f32) -> bool {\n    match direccion {\n        Adelante => motor.avanzar(distancia),\n        Atras => motor.retroceder(distancia),\n        Izquierda => motor.girar(-90),\n        Derecha => motor.girar(90),\n    }\n    return sensor.obstaculo() == false\n}</code></pre><p>El compilador genera bytecode JSON que la API Python interpreta y traduce a comandos seriales para el Arduino.</p>",
+        "tags": ["batirrover", "umpp", "compiladores", "robotica", "java", "python"],
+        "image": "imgweb/batirover.jpeg",
+        "relatedLinks": [
+            { "title": "Repositorio PF-LFA (Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" },
+            { "title": "Repositorio COMPI-PF (API + Compilador)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
+        ]
+    },
+    {
+        "slug": "datacenter-funcional-gestion",
+        "title": "Datacenter Funcional: De la Maqueta al Software de Gestión",
+        "date": "2025-07-08",
+        "category": "project",
+        "categoryLabel": "Proyectos",
+        "excerpt": "Cómo construí una maqueta funcional de datacenter con rack real, servidores Raspberry Pi, cableado estructurado y un software de gestión web para monitoreo en tiempo real.",
+        "content": "<p>Este proyecto combinó ingeniería de infraestructura física con desarrollo de software. El objetivo era construir un datacenter a escala funcional, no solo una maqueta decorativa.</p><h2>Infraestructura física</h2><ul><li>Rack de 12U con rieles y bandejas deslizables</li><li>3 servidores Raspberry Pi 4 (cluster Kubernetes)</li><li>Sistema UPS con batería LiPo y monitoreo I2C</li><li>Sensores DHT22 para temperatura/humedad</li><li>Ventiladores controlados por PWM con curva térmica</li><li>Cableado estructurado Cat6 con canaletas y patch panel</li><li>Panel frontal con LEDs de estado RGB</li></ul><h2>Software de gestión</h2><p>Desarrollé un dashboard web completo con Flask (Python) en el backend y HTML/CSS/JS vanilla en el frontend. Funcionalidades:</p><ul><li>Monitoreo en tiempo real: CPU, RAM, temperatura, voltaje</li><li>Sistema de inventario: cada equipo con su ubicación en el rack</li><li>Alertas configurables: temperatura alta, UPS bajo, servidor caído</li><li>Gráficos históricos con Chart.js</li><li>Logging de eventos con búsqueda y filtros</li><li>API REST para integración externa</li></ul>",
+        "tags": ["datacenter", "infraestructura", "python", "flask", "raspberry-pi", "dashboard"],
+        "image": "imgweb/datacentermaketafuncional.jpeg",
+        "relatedLinks": [
+            { "title": "Repositorio Datacenter_Grupo3-", "url": "https://github.com/OmegaKerveus7/Datacenter_Grupo3-.git" }
+        ]
+    },
+    {
+        "slug": "robot-busqueda-navegacion-autonoma",
+        "title": "Robot de Búsqueda: Navegación Autónoma con Sensores IR y Ultrasónicos",
+        "date": "2025-07-05",
+        "category": "project",
+        "categoryLabel": "Proyectos",
+        "excerpt": "Diseño e implementación de un robot autónomo con máquina de estados para navegación, evitación de obstáculos y búsqueda de objetos, controlado remotamente desde Python.",
+        "content": "<p>Este robot fue mi proyecto final de Electrónica Digital. La meta era construir un sistema autónomo capaz de buscar objetos en un entorno desconocido mientras evita obstáculos de forma dinámica.</p><h2>Arquitectura del sistema</h2><p>Diseñé una arquitectura multicapa con separación clara de responsabilidades:</p><ol><li><strong>Capa de sensores:</strong> 3 ultrasónicos HC-SR04 (frontal, izquierdo, derecho) + 2 sensores IR para detección de línea/suelo</li><li><strong>Capa de control:</strong> PID para motores DC con encoders, scheduling cooperativo en Arduino Mega</li><li><strong>Capa de navegación:</strong> Máquina de estados con transiciones: Exploración → Obstáculo → Evasión → Reanudar → Objeto encontrado</li><li><strong>Capa de comunicación:</strong> Puerto serial a 115200 baudios con protocolo propio basado en tramas</li></ol><h2>Control remoto en Python</h2><p>La aplicación de escritorio en Python (Tkinter) permite:</p><ul><li>Visualizar datos de sensores en tiempo real (gráficos de distancia)</li><li>Enviar waypoints haciendo clic en el mapa</li><li>Cambiar modos de operación (automático/manual)</li><li>Recibir video streaming desde cámara onboard</li><li>Registrar logs de navegación para análisis posterior</li></ul>",
+        "tags": ["robotica", "arduino", "python", "sensores", "navegacion-autonoma", "electronica"],
+        "image": "imgweb/robot_de_busqueda_yebacion.jpeg",
+        "relatedLinks": [
+            { "title": "Repositorio Proyecto-Final-Electrónica-Digital", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
+        ]
+    },
+    {
+        "slug": "herramientas-rust-2025",
+        "title": "Herramientas de Rust que Deberías Conocer en 2025",
+        "date": "2025-07-02",
+        "category": "tech-watch",
+        "categoryLabel": "Tech Watch",
+        "excerpt": "Explorando el ecosistema de herramientas de Rust: cargo, rust-analyzer, clippy, rustfmt, cargo-edit y más. Una guía práctica basada en rust-lang.org/tools.",
+        "content": "<p>Rust no es solo un lenguaje de programación, es un ecosistema completo de herramientas que hacen el desarrollo significativamente más productivo. Inspirado por <a href=\"https://rust-lang.org/tools/\" target=\"_blank\" rel=\"noopener noreferrer\">rust-lang.org/tools</a>, aquí están las herramientas que uso regularmente:</p><h2>Toolchain esencial</h2><ul><li><strong>rustup:</strong> Gestor de toolchains, instala y cambia entre versiones de Rust fácilmente</li><li><strong>cargo:</strong> Build system, gestor de paquetes, test runner y mucho más en un solo comando</li><li><strong>rust-analyzer:</strong> LSP de primer nivel, autocompletado, diagnósticos, refactors avanzados</li><li><strong>clippy:</strong> Linter con más de 500 reglas que previenen errores comunes y malas prácticas</li><li><strong>rustfmt:</strong> Formateador oficial de código, consistencia garantizada en todo el equipo</li></ul><h2>Herramientas de productividad</h2><ul><li><strong>cargo-edit:</strong> Manipulación de Cargo.toml desde CLI (cargo add, cargo rm, cargo upgrade)</li><li><strong>cargo-watch:</strong> Ejecuta comandos automáticamente al detectar cambios en archivos</li><li><strong>cargo-audit:</strong> Auditoría de seguridad de dependencias contra base de datos de vulnerabilidades</li><li><strong>cargo-expand:</strong> Expande macros para depurar código generado</li><li><strong>cargo-flamegraph:</strong> Genera perfiles visuales de rendimiento</li></ul><p>La filosofía de Rust de tener herramientas oficiales integradas desde el inicio es algo que otros lenguajes deberían adoptar.</p>",
+        "tags": ["rust", "tooling", "productividad", "desarrollo"],
+        "image": "",
+        "relatedLinks": [
+            { "title": "Rust Tools (Oficial)", "url": "https://rust-lang.org/tools/" },
+            { "title": "Rust Programming Language", "url": "https://www.rust-lang.org" }
+        ]
+    },
+    {
+        "slug": "liderazgo-tecnico-proyectos-universitarios",
+        "title": "Liderazgo Técnico en Proyectos Universitarios: Lecciones Aprendidas",
+        "date": "2025-06-28",
+        "category": "opinion",
+        "categoryLabel": "Opinión",
+        "excerpt": "Tres proyectos, cuatro equipos distintos, un mismo enfoque: Scrum adaptado, code reviews como herramienta de enseñanza, y gestión de riesgos en entornos académicos.",
+        "content": "<p>He liderado tres proyectos universitarios completos y quiero compartir las lecciones que aprendí en el camino. No hay nada como gestionar un equipo de 4 personas sin experiencia laboral previa, con deadlines académicos y tecnologías que nadie domina al 100%.</p><h2>Scrum adaptado al contexto universitario</h2><p>Implementé sprints de una semana con reuniones diarias de 10 minutos. El backlog se priorizaba cada lunes y el viernes hacíamos retrospectiva. Aprendí que la rigidez de Scrum tradicional no funciona en la universidad; hay que adaptar los roles y ceremonias al ritmo académico.</p><h2>Code reviews como enseñanza</h2><p>En lugar de solo revisar código, usaba los PRs como oportunidad de enseñanza. Cada revisión incluía explicaciones de por qué cierto patrón era mejor, referencias a documentación y ejemplos concretos. Esto elevó significativamente la calidad del código del equipo.</p><h2>Gestión de riesgos</h2><p>Identificar riesgos temprano fue clave: integrar componentes semanalmente, tener un plan B para cada subsistema crítico, y documentar decisiones técnicas. En todos los proyectos entregamos a tiempo, pero no sin sobresaltos.</p>",
+        "tags": ["liderazgo", "scrum", "project-management", "teamwork", "codereview"],
+        "image": "",
+        "relatedLinks": []
+    },
+    {
+        "slug": "mi-stack-2025",
+        "title": "Mi Stack de Desarrollo 2025: C++, Java, C#, Python, TypeScript y UM++",
+        "date": "2025-06-25",
+        "category": "tech-watch",
+        "categoryLabel": "Tech Watch",
+        "excerpt": "Por qué uso cada lenguaje, en qué proyectos los aplico, y cómo combino sistemas embebidos, compiladores, backend y frontend en un mismo perfil.",
+        "content": "<p>A menudo me preguntan por qué tengo un stack tan variado. La respuesta es simple: cada lenguaje resuelve un tipo de problema de forma óptima, y como arquitecto de software, poder elegir la herramienta adecuada para cada capa del sistema es fundamental.</p><h2>Lenguajes core</h2><ul><li><strong>C++:</strong> Robótica, sistemas embebidos, firmware de alto rendimiento. Lo uso en los controladores de motores y procesamiento de sensores.</li><li><strong>Java:</strong> Compiladores, herramientas de desarrollo, aplicaciones de escritorio. Mi compilador UM++ está escrito en Java.</li><li><strong>C#:</strong> Aplicaciones Windows, Unity para prototipos 3D. Lo uso menos pero es parte de mi formación.</li><li><strong>Python:</strong> APIs, scripting, machine learning, automatización. Es mi lenguaje más productivo para prototipado rápido.</li><li><strong>TypeScript:</strong> Desarrollo web frontend y backend (Node). Tipado estático que JavaScript necesita.</li></ul><h2>UM++: mi propia creación</h2><p>UM++ nació como proyecto de compiladores y evolucionó hasta convertirse en el puente entre la programación de alto nivel y la robótica. Es un lenguaje pequeño pero funcional, con tipado estático, inferencia y pattern matching.</p>",
+        "tags": ["stack", "lenguajes", "c++", "java", "python", "typescript", "umpp"],
+        "image": "",
+        "relatedLinks": [
+            { "title": "Repositorio COMPI-PF (UM++ Compiler)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
+        ]
+    }
+]
