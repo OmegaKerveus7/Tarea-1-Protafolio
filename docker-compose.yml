@@ -1,29 +1,35 @@
 version: '3.8'
 
 services:
-  wordpress:
-    image: wordpress:latest
-    restart: always
-    ports:
-      - 8080:80
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: wp_user
-      WORDPRESS_DB_PASSWORD: wp_pass
-      WORDPRESS_DB_NAME: portfolio_wp
-    volumes:
-      - ./wp-content:/var/www/html/wp-content
-
   db:
-    image: mariadb:10.11
-    restart: always
+    image: mysql:8.0
+    container_name: wp_db
+    restart: unless-stopped
     environment:
-      MYSQL_DATABASE: portfolio_wp
-      MYSQL_USER: wp_user
-      MYSQL_PASSWORD: wp_pass
-      MYSQL_ROOT_PASSWORD: root_pass
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wppassword
     volumes:
       - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wp_site
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppassword
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    ports:
+      - "8000:80"
 
 volumes:
   db_data:
