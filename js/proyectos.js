@@ -1,11 +1,44 @@
 (() => {
     'use strict';
 
+    /* Theme */
+    const STORAGE_KEY = 'gtr-theme';
+    function getTheme() { return localStorage.getItem(STORAGE_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }
+    function setTheme(t) { document.documentElement.setAttribute('data-theme', t); localStorage.setItem(STORAGE_KEY, t); const btn = document.getElementById('theme-toggle'); if (btn) btn.setAttribute('aria-label', t === 'dark' ? 'Modo claro' : 'Modo oscuro'); }
+    setTheme(getTheme());
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) toggle.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+
+    /* Nav */
+    const navToggle = document.querySelector('.nav__toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => { const e = navToggle.getAttribute('aria-expanded') === 'true'; navToggle.setAttribute('aria-expanded', !e); navMenu.classList.toggle('nav__menu--open'); });
+        document.addEventListener('click', e => { if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) { navToggle.setAttribute('aria-expanded', 'false'); navMenu.classList.remove('nav__menu--open'); } });
+    }
+
+    /* Active nav link */
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav__link').forEach(l => { if (l.getAttribute('href') === page || (page === '' && l.getAttribute('href') === 'index.html')) l.classList.add('nav__link--active'); });
+
+    /* Year in footer */
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    /* Smooth scroll */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            const id = this.getAttribute('href');
+            if (id === '#' || !id) return;
+            const t = document.querySelector(id);
+            if (t) { e.preventDefault(); const h = 80, y = t.getBoundingClientRect().top + window.pageYOffset - h; window.scrollTo({ top: y, behavior: 'smooth' }); t.focus({ preventScroll: true }); }
+        });
+    });
+
+    /* Proyectos específico */
     const PROJECTS_URL = 'data/projects.json';
     const grid = document.getElementById('projects-grid');
-    const filterBtns = document.querySelectorAll('.filter-btn');
     let allProjects = [];
-    let currentFilter = 'all';
 
     async function loadProjects() {
         try {
@@ -18,11 +51,9 @@
 
     function renderProjects() {
         if (!grid) return;
-        const filtered = currentFilter === 'all' ? allProjects : allProjects.filter(p => p.category === currentFilter);
-        if (!filtered.length) { grid.innerHTML = '<p style="color:var(--color-text-muted)">No hay proyectos en esta categoría.</p>'; return; }
-        grid.innerHTML = filtered.map(p => `
+        if (!allProjects.length) { grid.innerHTML = '<p style="color:var(--color-text-muted)">No hay proyectos.</p>'; return; }
+        grid.innerHTML = allProjects.map(p => `
             <article class="project-card" data-id="${p.id}">
-                <img src="${p.images[0]}" alt="" class="project-card__image" loading="lazy">
                 <div class="project-card__content">
                     <div class="project-card__meta">${p.stack.slice(0,4).map(s => `<span class="project-card__tag">${s}</span>`).join('')}</div>
                     <h3 class="project-card__title">${p.title}</h3>
@@ -58,7 +89,6 @@
                         <ul>${p.repos.map(r => `<li><a href="${r.url}" target="_blank">${r.name}</a></li>`).join('')}</ul>
                     </div>
                     <div class="project-detail__tags">${p.stack.map(s => `<span class="project-detail__tag">${s}</span>`).join('')}</div>
-                    ${p.images.slice(1).map(i => `<img src="${i}" alt="" class="project-detail__image" loading="lazy">`).join('')}
                     <a href="#" onclick="location.reload()" class="project-detail__back">← Volver a proyectos</a>
                 </article>
             </div>
@@ -66,16 +96,5 @@
         window.scrollTo({ top: main.offsetTop - 80, behavior: 'smooth' });
     }
 
-    function initFilters() {
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => { b.classList.remove('filter-btn--active'); });
-                btn.classList.add('filter-btn--active');
-                currentFilter = btn.dataset.filter;
-                renderProjects();
-            });
-        });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => { loadProjects(); initFilters(); });
+    document.addEventListener('DOMContentLoaded', () => { loadProjects(); });
 })();

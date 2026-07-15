@@ -8,22 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/proyectos.css">
 </head>
 <body>
-    <header class="header" role="banner">
-        <nav class="nav container" aria-label="Navegación principal">
+    <header class="header">
+        <nav class="nav container">
             <a href="index.html" class="nav__logo"><span class="nav__logo-text">GTR</span></a>
             <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menú">
                 <span class="nav__toggle-icon"></span>
             </button>
-            <ul class="nav__menu" id="nav-menu" role="menubar">
-                <li role="none"><a href="index.html" class="nav__link" role="menuitem">Inicio</a></li>
-                <li role="none"><a href="proyectos.html" class="nav__link nav__link--active" role="menuitem">Proyectos</a></li>
-                <li role="none"><a href="noticias.html" class="nav__link" role="menuitem">Noticias</a></li>
-                <li role="none"><a href="index.html#contacto" class="nav__link" role="menuitem">Contacto</a></li>
-                <li role="none">
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+                <li><a href="proyectos.html" class="nav__link nav__link--active">Proyectos</a></li>
+                <li><a href="noticias.html" class="nav__link">Noticias</a></li>
+                <li><a href="index.html#contacto" class="nav__link">Contacto</a></li>
+                <li>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Modo oscuro" type="button">
                         <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
                         <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -33,36 +32,30 @@
         </nav>
     </header>
 
-    <main role="main">
+    <main>
         <section class="page-hero">
             <div class="container">
                 <p class="page-hero__badge">Portafolio de Proyectos</p>
                 <h1 class="page-hero__title">Proyectos Universitarios</h1>
-                <p class="page-hero__description">Cuatro proyectos completos liderados desde la arquitectura hasta la entrega. Haz clic en cualquier tarjeta para ver el detalle.</p>
+                <p class="page-hero__description">Cuatro proyectos completos liderados desde la arquitectura hasta la entrega.</p>
             </div>
         </section>
 
         <section class="section projects">
             <div class="container">
-                <div class="projects__filter">
-                    <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="robotics">Robótica</button>
-                    <button class="filter-btn" data-filter="infrastructure">Infraestructura</button>
-                    <button class="filter-btn" data-filter="compilers">Compiladores</button>
-                </div>
                 <div class="projects__grid" id="projects-grid"></div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container footer__grid">
             <div class="footer__brand">
                 <a href="index.html" class="footer__logo"><span class="footer__logo-text">GTR</span></a>
                 <p class="footer__tagline">Desarrollador Fullstack · Tech Lead · PM</p>
                 <p class="footer__copyright">© <span id="year"></span> Gustavo Adolfo Tobías Ramírez.</p>
             </div>
-            <nav class="footer__nav" aria-label="Navegación">
+            <nav class="footer__nav">
                 <h4 class="footer__nav-title">Navegación</h4>
                 <ul class="footer__nav-list">
                     <li><a href="index.html" class="footer__nav-link">Inicio</a></li>
@@ -71,7 +64,7 @@
                     <li><a href="index.html#contacto" class="footer__nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <nav class="footer__nav" aria-label="Proyectos">
+            <nav class="footer__nav">
                 <h4 class="footer__nav-title">Proyectos</h4>
                 <ul class="footer__nav-list">
                     <li><a href="proyectos.html" class="footer__nav-link">Batirrover</a></li>
@@ -91,7 +84,6 @@
         </div>
     </footer>
 
-    <script src="js/base.js"></script>
     <script src="js/proyectos.js"></script>
 </body>
 </html>

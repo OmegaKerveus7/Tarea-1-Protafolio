@@ -5,10 +5,9 @@
         "date": "2025-07-14",
         "category": "personal",
         "categoryLabel": "Personal",
-        "excerpt": "Presento mi nuevo portafolio profesional construido completamente con HTML, CSS y JavaScript vanilla. Sin frameworks, sin CMS, sin base de datos.",
-        "content": "<p>Después de semanas de trabajo, finalmente lanzo mi portafolio profesional. La decisión técnica fue clara desde el inicio: <strong>HTML + CSS + JavaScript vanilla</strong>. Sin WordPress, sin React, sin base de datos. Un sitio estático puro.</p><h2>Por qu&eacute; est&aacute;tico?</h2><p>Rendimiento superior (Lighthouse > 95), seguridad inherente (sin backend que atacar), costo cero de hosting (GitHub Pages), control total sobre cada l&iacute;nea de c&oacute;digo.</p><h2>Stack t&eacute;cnico</h2><ul><li>HTML5 sem&aacute;ntico con ARIA para accesibilidad</li><li>CSS3 con variables, Grid, Flexbox y modo oscuro</li><li>JavaScript ES6+ con IntersectionObserver y fetch</li><li>Hosting en GitHub Pages</li></ul>",
+        "excerpt": "Presento mi nuevo portafolio profesional construido completamente con HTML, CSS y JavaScript vanilla.",
+        "content": "<p>Después de semanas de trabajo, finalmente lanzo mi portafolio profesional. La decisión técnica fue clara desde el inicio: <strong>HTML + CSS + JavaScript vanilla</strong>. Sin WordPress, sin React, sin base de datos. Un sitio estático puro.</p><h2>Por qué estático?</h2><p>Rendimiento superior, seguridad inherente, costo cero de hosting (GitHub Pages), control total sobre cada línea de código.</p><h2>Stack técnico</h2><ul><li>HTML5 semántico con ARIA para accesibilidad</li><li>CSS3 con variables, Grid, Flexbox y modo oscuro</li><li>JavaScript ES6+ con IntersectionObserver y fetch</li><li>Hosting en GitHub Pages</li></ul>",
         "tags": ["portafolio", "html", "css", "javascript"],
-        "image": "imgweb/image.png",
         "relatedLinks": [
             { "title": "GitHub Pages Documentation", "url": "https://pages.github.com" }
         ]
@@ -19,10 +18,9 @@
         "date": "2025-07-10",
         "category": "project",
         "categoryLabel": "Proyectos",
-        "excerpt": "Detalle t&eacute;cnico del Batirrover: arquitectura en capas, pipeline de compilaci&oacute;n UM++ y conexi&oacute;n con API Python.",
-        "content": "<p>El Batirrover es mi proyecto m&aacute;s ambicioso: un rover aut&oacute;nomo con un pipeline completo de compilaci&oacute;n que conecta un lenguaje de programaci&oacute;n propio (UM++) con un robot f&iacute;sico.</p><h2>Arquitectura en capas</h2><ol><li><strong>Capa de usuario:</strong> Editor de c&oacute;digo UM++</li><li><strong>Capa de compilaci&oacute;n:</strong> Compilador Java genera AST</li><li><strong>Capa de API:</strong> Python + WebSockets interpreta bytecode</li><li><strong>Capa f&iacute;sica:</strong> Arduino/ESP32 ejecuta comandos</li></ol>",
+        "excerpt": "Detalle técnico del Batirrover: arquitectura en capas, pipeline de compilación UM++ y conexión con API Python.",
+        "content": "<p>El Batirrover es mi proyecto más ambicioso: un rover autónomo con un pipeline completo de compilación que conecta un lenguaje de programación propio (UM++) con un robot físico.</p><h2>Arquitectura en capas</h2><ol><li><strong>Capa de usuario:</strong> Editor de código UM++</li><li><strong>Capa de compilación:</strong> Compilador Java genera AST</li><li><strong>Capa de API:</strong> Python + WebSockets interpreta bytecode</li><li><strong>Capa física:</strong> Arduino/ESP32 ejecuta comandos</li></ol>",
         "tags": ["batirrover", "umpp", "compiladores", "robotica"],
-        "image": "imgweb/batirover.jpeg",
         "relatedLinks": [
             { "title": "Repositorio PF-LFA", "url": "https://github.com/ZelderD-12/PF-LFA.git" },
             { "title": "Repositorio COMPI-PF", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
@@ -30,56 +28,52 @@
     },
     {
         "slug": "datacenter-funcional-gestion",
-        "title": "Datacenter Funcional: Maqueta y Software de Gesti&oacute;n",
+        "title": "Datacenter Funcional: Maqueta y Software de Gestión",
         "date": "2025-07-08",
         "category": "project",
         "categoryLabel": "Proyectos",
-        "excerpt": "Construcci&oacute;n de maqueta funcional de datacenter con rack real, servidores Raspberry Pi, cableado estructurado y dashboard web.",
-        "content": "<p>Proyecto que combin&oacute; ingenier&iacute;a de infraestructura f&iacute;sica con desarrollo de software.</p><h2>Infraestructura f&iacute;sica</h2><ul><li>Rack 12U con servidores Raspberry Pi 4</li><li>Sistema UPS con bater&iacute;a LiPo</li><li>Sensores DHT22 + ventiladores PWM</li><li>Cableado estructurado Cat6</li></ul><h2>Software de gesti&oacute;n</h2><p>Dashboard web con Flask + HTML/CSS/JS: monitoreo en tiempo real, inventario, alertas, gr&aacute;ficos hist&oacute;ricos.</p>",
+        "excerpt": "Construcción de maqueta funcional de datacenter con rack real, servidores Raspberry Pi, cableado estructurado y dashboard web.",
+        "content": "<p>Proyecto que combinó ingeniería de infraestructura física con desarrollo de software.</p><h2>Infraestructura física</h2><ul><li>Rack 12U con servidores Raspberry Pi 4</li><li>Sistema UPS con batería LiPo</li><li>Sensores DHT22 + ventiladores PWM</li><li>Cableado estructurado Cat6</li></ul><h2>Software de gestión</h2><p>Dashboard web con Flask + HTML/CSS/JS: monitoreo en tiempo real, inventario, alertas, gráficos históricos.</p>",
         "tags": ["datacenter", "infraestructura", "python", "flask", "raspberry-pi"],
-        "image": "imgweb/datacentermaketafuncional.jpeg",
         "relatedLinks": [
             { "title": "Repositorio Datacenter_Grupo3-", "url": "https://github.com/OmegaKerveus7/Datacenter_Grupo3-.git" }
         ]
     },
     {
         "slug": "robot-busqueda-navegacion",
-        "title": "Robot B&uacute;squeda: Navegaci&oacute;n Aut&oacute;noma",
+        "title": "Robot Búsqueda: Navegación Autónoma",
         "date": "2025-07-05",
         "category": "project",
         "categoryLabel": "Proyectos",
-        "excerpt": "Robot aut&oacute;nomo con m&aacute;quina de estados para navegaci&oacute;n, evitaci&oacute;n de obst&aacute;culos y b&uacute;squeda de objetos.",
-        "content": "<p>Proyecto final de Electr&oacute;nica Digital. Robot capaz de buscar objetos en entorno desconocido mientras evita obst&aacute;culos.</p><h2>Arquitectura multicapa</h2><ol><li>Sensores ultras&oacute;nicos + IR</li><li>Control PID con scheduling cooperativo</li><li>M&aacute;quina de estados: Exploraci&oacute;n → Evasi&oacute;n → B&uacute;squeda</li><li>Comunicaci&oacute;n serial con protocolo propio</li></ol>",
+        "excerpt": "Robot autónomo con máquina de estados para navegación, evitación de obstáculos y búsqueda de objetos.",
+        "content": "<p>Proyecto final de Electrónica Digital. Robot capaz de buscar objetos en entorno desconocido mientras evita obstáculos.</p><h2>Arquitectura multicapa</h2><ol><li>Sensores ultrasónicos + IR</li><li>Control PID con scheduling cooperativo</li><li>Máquina de estados: Exploración → Evasión → Búsqueda</li><li>Comunicación serial con protocolo propio</li></ol>",
         "tags": ["robotica", "arduino", "python", "sensores", "navegacion-autonoma"],
-        "image": "imgweb/robot_de_busqueda_yebacion.jpeg",
         "relatedLinks": [
-            { "title": "Repositorio Electr&oacute;nica Digital", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
+            { "title": "Repositorio Electrónica Digital", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
         ]
     },
     {
         "slug": "herramientas-rust-2025",
-        "title": "Herramientas Rust que Deber&iacute;as Conocer",
+        "title": "Herramientas Rust que Deberías Conocer",
         "date": "2025-07-02",
         "category": "tech-watch",
         "categoryLabel": "Tech Watch",
-        "excerpt": "Ecosistema de herramientas de Rust: cargo, rust-analyzer, clippy, rustfmt y m&aacute;s. Basado en rust-lang.org/tools.",
-        "content": "<p>Inspirado por <a href=\"https://rust-lang.org/tools/\" target=\"_blank\" rel=\"noopener noreferrer\">rust-lang.org/tools</a>, estas son las herramientas que uso regularmente:</p><ul><li><strong>rustup:</strong> Gestor de toolchains</li><li><strong>cargo:</strong> Build + paquetes + tests</li><li><strong>rust-analyzer:</strong> LSP de primer nivel</li><li><strong>clippy:</strong> Linter con 500+ reglas</li><li><strong>rustfmt:</strong> Formateador oficial</li></ul>",
+        "excerpt": "Ecosistema de herramientas de Rust: cargo, rust-analyzer, clippy, rustfmt y más.",
+        "content": "<p>Inspirado por <a href='https://rust-lang.org/tools/' target='_blank' rel='noopener noreferrer'>rust-lang.org/tools</a>, estas son las herramientas que uso regularmente:</p><ul><li><strong>rustup:</strong> Gestor de toolchains</li><li><strong>cargo:</strong> Build + paquetes + tests</li><li><strong>rust-analyzer:</strong> LSP de primer nivel</li><li><strong>clippy:</strong> Linter con 500+ reglas</li><li><strong>rustfmt:</strong> Formateador oficial</li></ul>",
         "tags": ["rust", "tooling", "productividad"],
-        "image": "",
         "relatedLinks": [
             { "title": "Rust Tools Oficial", "url": "https://rust-lang.org/tools/" }
         ]
     },
     {
         "slug": "liderazgo-tecnico-universitario",
-        "title": "Liderazgo T&eacute;cnico en Proyectos Universitarios",
+        "title": "Liderazgo Técnico en Proyectos Universitarios",
         "date": "2025-06-28",
         "category": "opinion",
-        "categoryLabel": "Opini&oacute;n",
-        "excerpt": "Lecciones aprendidas liderando 3 proyectos: Scrum adaptado, code reviews como ense&ntilde;anza, gesti&oacute;n de riesgos.",
-        "content": "<p>He liderado tres proyectos universitarios completos y comparto las lecciones aprendidas.</p><h2>Scrum adaptado</h2><p>Sprints de una semana con daily de 10 min. Retrospectiva los viernes.</p><h2>Code reviews como ense&ntilde;anza</h2><p>Usaba PRs para explicar patrones, documentaci&oacute;n y ejemplos concretos.</p><h2>Gesti&oacute;n de riesgos</h2><p>Integraci&oacute;n semanal, plan B para subsistemas cr&iacute;ticos, documentaci&oacute;n de decisiones.</p>",
+        "categoryLabel": "Opinión",
+        "excerpt": "Lecciones aprendidas liderando 3 proyectos: Scrum adaptado, code reviews como enseñanza, gestión de riesgos.",
+        "content": "<p>He liderado tres proyectos universitarios completos y comparto las lecciones aprendidas.</p><h2>Scrum adaptado</h2><p>Sprints de una semana con daily de 10 min. Retrospectiva los viernes.</p><h2>Code reviews como enseñanza</h2><p>Usaba PRs para explicar patrones, documentación y ejemplos concretos.</p><h2>Gestión de riesgos</h2><p>Integración semanal, plan B para subsistemas críticos, documentación de decisiones.</p>",
         "tags": ["liderazgo", "scrum", "project-management", "teamwork"],
-        "image": "",
         "relatedLinks": []
     },
     {
@@ -88,10 +82,9 @@
         "date": "2025-06-25",
         "category": "tech-watch",
         "categoryLabel": "Tech Watch",
-        "excerpt": "C++, Java, C#, Python, TypeScript y UM++. Por qu&eacute; uso cada lenguaje y en qu&eacute; proyectos los aplico.",
-        "content": "<p>Cada lenguaje resuelve un tipo de problema de forma &oacute;ptima.</p><ul><li><strong>C++:</strong> Rob&oacute;tica, firmware, sensores</li><li><strong>Java:</strong> Compiladores, herramientas de desarrollo</li><li><strong>C#:</strong> Aplicaciones Windows, Unity</li><li><strong>Python:</strong> APIs, scripting, automatizaci&oacute;n</li><li><strong>TypeScript:</strong> Web frontend/backend tipado</li><li><strong>UM++:</strong> Lenguaje propio para rob&oacute;tica</li></ul>",
+        "excerpt": "C++, Java, C#, Python, TypeScript y UM++. Por qué uso cada lenguaje y en qué proyectos los aplico.",
+        "content": "<p>Cada lenguaje resuelve un tipo de problema de forma óptima.</p><ul><li><strong>C++:</strong> Robótica, firmware, sensores</li><li><strong>Java:</strong> Compiladores, herramientas de desarrollo</li><li><strong>C#:</strong> Aplicaciones Windows, Unity</li><li><strong>Python:</strong> APIs, scripting, automatización</li><li><strong>TypeScript:</strong> Web frontend/backend tipado</li><li><strong>UM++:</strong> Lenguaje propio para robótica</li></ul>",
         "tags": ["stack", "lenguajes", "c++", "java", "python", "typescript"],
-        "image": "",
         "relatedLinks": [
             { "title": "Repositorio UM++", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
         ]

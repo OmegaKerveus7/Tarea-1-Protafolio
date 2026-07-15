@@ -8,7 +8,6 @@
         "category": "robotics",
         "stack": ["C++", "Python", "ROS", "Arduino", "ESP32", "Java", "UM++"],
         "innovation": "Pipeline completo: Lenguaje UM++ → Compilador Java → API Python → Comandos al robot",
-        "images": ["imgweb/batirover.jpeg", "imgweb/desarrollo_rover.jpeg"],
         "repos": [
             { "name": "PF-LFA (Código Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" },
             { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador UM++)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
@@ -24,7 +23,6 @@
         "category": "infrastructure",
         "stack": ["Python", "Flask", "Linux", "Docker", "HTML", "CSS", "JavaScript", "SQLite", "Raspberry Pi", "Redes"],
         "innovation": "Integración de infraestructura física con software de gestión web en tiempo real",
-        "images": ["imgweb/datacentermaketafuncional.jpeg"],
         "repos": [
             { "name": "Datacenter_Grupo3- (Código completo)", "url": "https://github.com/OmegaKerveus7/Datacenter_Grupo3-.git" }
         ],
@@ -39,7 +37,6 @@
         "category": "robotics",
         "stack": ["C/C++", "Python", "Arduino", "ESP32", "Sensores Ultrasónicos", "Sensores IR", "PID Control"],
         "innovation": "Arquitectura multicapa con máquina de estados para navegación autónoma",
-        "images": ["imgweb/robot_de_busqueda_yebacion.jpeg"],
         "repos": [
             { "name": "Proyecto-Final-Electrónica-Digital (Código completo)", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
         ],
@@ -54,7 +51,6 @@
         "category": "compilers",
         "stack": ["Java", "Python", "FastAPI", "WebSockets", "ANTLR", "AST"],
         "innovation": "Lenguaje de programación propio (UM++) con compilador en Java integrado a API Python para control robótico",
-        "images": ["imgweb/batirover.jpeg", "imgweb/desarrollo_rover.jpeg"],
         "repos": [
             { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" },
             { "name": "PF-LFA (Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" }

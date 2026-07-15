@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Gustavo Adolfo Tobías Ramírez - Desarrollador Fullstack, Líder Técnico, Project Manager">
+    <meta name="description" content="Portafolio profesional de Gustavo Adolfo Tobías Ramírez">
     <title>Gustavo Tobías | Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header" role="banner">
-        <nav class="nav container" aria-label="Navegación principal">
+    <header class="header">
+        <nav class="nav container">
             <a href="index.html" class="nav__logo"><span class="nav__logo-text">GTR</span></a>
             <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menú">
                 <span class="nav__toggle-icon"></span>
             </button>
-            <ul class="nav__menu" id="nav-menu" role="menubar">
-                <li role="none"><a href="index.html" class="nav__link nav__link--active" role="menuitem">Inicio</a></li>
-                <li role="none"><a href="proyectos.html" class="nav__link" role="menuitem">Proyectos</a></li>
-                <li role="none"><a href="noticias.html" class="nav__link" role="menuitem">Noticias</a></li>
-                <li role="none"><a href="#contacto" class="nav__link" role="menuitem">Contacto</a></li>
-                <li role="none">
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+                <li><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+                <li><a href="noticias.html" class="nav__link">Noticias</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                <li>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Modo oscuro" type="button">
                         <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
                         <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -33,35 +32,16 @@
         </nav>
     </header>
 
-    <main role="main">
-        <section class="hero" aria-labelledby="hero-title">
+    <main>
+        <section class="hero">
             <div class="container hero__grid">
                 <div class="hero__content">
                     <p class="hero__badge"><span class="hero__badge-dot"></span> Desarrollador Fullstack · Líder Técnico · Project Manager</p>
-                    <h1 id="hero-title" class="hero__title">Gustavo Adolfo <span class="hero__title--accent">Tobías Ramírez</span></h1>
+                    <h1 class="hero__title">Gustavo Adolfo <span class="hero__title--accent">Tobías Ramírez</span></h1>
                     <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas (UMG) — Arquitecto de software, desarrollador fullstack y líder de equipos universitarios. Especializado en C++, Java, C#, Python, TypeScript y UM++.</p>
                     <div class="hero__actions">
                         <a href="proyectos.html" class="btn btn--primary">Ver Proyectos</a>
                         <a href="noticias.html" class="btn btn--secondary">Leer Noticias</a>
-                    </div>
-                    <div class="hero__stats">
-                        <div><span class="hero__stat-number" data-count="4">0</span><span class="hero__stat-label">Proyectos</span></div>
-                        <div><span class="hero__stat-number" data-count="7">0</span><span class="hero__stat-label">Artículos</span></div>
-                        <div><span class="hero__stat-number" data-count="6">0</span><span class="hero__stat-label">Lenguajes</span></div>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero__image-wrapper">
-                        <img src="imgweb/Gustavo.jpg" alt="Gustavo Tobías" class="hero__image">
-                    </div>
-                    <div class="code-preview">
-                        <div class="code-header">
-                            <span class="code-dot" style="--dot-color:#ff5f57"></span>
-                            <span class="code-dot" style="--dot-color:#ffbd2e"></span>
-                            <span class="code-dot" style="--dot-color:#28ca42"></span>
-                            <span class="code-title">portfolio.js</span>
-                        </div>
-                        <pre class="code-content"><code><span class="kw">const</span> dev = <span class="kw">new</span> <span class="fn">FullstackDev</span>({<span class="prop">languages</span>: [<span class="str">'C++'</span>, <span class="str">'Java'</span>, <span class="str">'Python'</span>, <span class="str">'TS'</span>, <span class="str">'UM++'</span>], <span class="prop">role</span>: <span class="str">'Tech Lead'</span>, <span class="prop">projects</span>: <span class="num">4</span>});<br><span class="kw">await</span> dev.<span class="fn">build</span>(<span class="str">'portfolio'</span>);<br><span class="kw">await</span> dev.<span class="fn">deploy</span>(<span class="str">'github-pages'</span>);</code></pre>
                     </div>
                 </div>
             </div>
@@ -115,48 +95,26 @@
                     <h2 class="section__title">Contacto</h2>
                     <p class="section__subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
                 </header>
-                <form class="contact__form" id="contact-form" action="#" method="POST" data-netlify="true" novalidate>
-                    <input type="hidden" name="form-name" value="contact">
-                    <div class="form__group">
-                        <label for="name" class="form__label">Nombre</label>
-                        <input type="text" id="name" name="name" class="form__input" required placeholder="Tu nombre">
-                    </div>
-                    <div class="form__group">
-                        <label for="email" class="form__label">Email</label>
-                        <input type="email" id="email" name="email" class="form__input" required placeholder="tu@email.com">
-                    </div>
-                    <div class="form__group">
-                        <label for="subject" class="form__label">Asunto</label>
-                        <input type="text" id="subject" name="subject" class="form__input" required placeholder="Asunto">
-                    </div>
-                    <div class="form__group">
-                        <label for="message" class="form__label">Mensaje</label>
-                        <textarea id="message" name="message" class="form__textarea" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
-                </form>
                 <div class="contact__info">
-                    <h3 class="contact__info-title">O contáctame directamente</h3>
                     <ul class="contact__list">
-                        <li class="contact__item"><span style="color:var(--color-primary)">✉</span> <a href="mailto:tobiasgusito@gmail.com" class="contact__link">tobiasgusito@gmail.com</a></li>
-                        <li class="contact__item"><span style="color:var(--color-primary)">📞</span> <a href="tel:+50251151685" class="contact__link">+502 5115 1685</a></li>
-                        <li class="contact__item"><span style="color:var(--color-primary)">🐙</span> <a href="https://github.com/OmegaKerveus7" class="contact__link" target="_blank">GitHub: OmegaKerveus7</a></li>
-                        <li class="contact__item"><span style="color:var(--color-primary)">🐙</span> <a href="https://github.com/ZelderD-12" class="contact__link" target="_blank">GitHub: ZelderD-12</a></li>
-                        <li class="contact__item"><span style="color:var(--color-primary)">🔗</span> <span class="contact__link">LinkedIn: Próximamente</span></li>
+                        <li class="contact__item"><a href="mailto:tobiasgusito@gmail.com" class="contact__link">tobiasgusito@gmail.com</a></li>
+                        <li class="contact__item"><a href="tel:+50251151685" class="contact__link">+502 5115 1685</a></li>
+                        <li class="contact__item"><a href="https://github.com/OmegaKerveus7" class="contact__link" target="_blank">GitHub: OmegaKerveus7</a></li>
+                        <li class="contact__item"><a href="https://github.com/ZelderD-12" class="contact__link" target="_blank">GitHub: ZelderD-12</a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container footer__grid">
             <div class="footer__brand">
                 <a href="index.html" class="footer__logo"><span class="footer__logo-text">GTR</span></a>
                 <p class="footer__tagline">Desarrollador Fullstack · Tech Lead · Project Manager</p>
-                <p class="footer__copyright">© <span id="year"></span> Gustavo Adolfo Tobías Ramírez. HTML, CSS y JS vanilla.</p>
+                <p class="footer__copyright">© <span id="year"></span> Gustavo Adolfo Tobías Ramírez.</p>
             </div>
-            <nav class="footer__nav" aria-label="Navegación">
+            <nav class="footer__nav">
                 <h4 class="footer__nav-title">Navegación</h4>
                 <ul class="footer__nav-list">
                     <li><a href="index.html" class="footer__nav-link">Inicio</a></li>
@@ -165,7 +123,7 @@
                     <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <nav class="footer__nav" aria-label="Proyectos">
+            <nav class="footer__nav">
                 <h4 class="footer__nav-title">Proyectos</h4>
                 <ul class="footer__nav-list">
                     <li><a href="proyectos.html" class="footer__nav-link">Batirrover</a></li>
@@ -185,7 +143,6 @@
         </div>
     </footer>
 
-    <script src="js/base.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
