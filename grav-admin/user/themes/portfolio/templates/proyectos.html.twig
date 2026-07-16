@@ -1,0 +1,23 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block meta %}
+<meta name="description" content="Proyectos universitarios de Gustavo Adolfo Tobías Ramírez">
+{% endblock %}
+
+{% block title %}Proyectos | Gustavo Tobías{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="page-hero__badge">Portafolio de Proyectos</p>
+        <h1 class="page-hero__title">Proyectos Universitarios</h1>
+        <p class="page-hero__description">Cuatro proyectos completos liderados desde la arquitectura hasta la entrega.</p>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="container">
+        <div class="projects__grid" id="projects-grid"></div>
+    </div>
+</section>
+{% endblock %}

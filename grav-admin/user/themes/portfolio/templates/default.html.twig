@@ -1,0 +1,76 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero__grid">
+        <div class="hero__content">
+            <p class="hero__badge"><span class="hero__badge-dot"></span> Desarrollador Fullstack · Líder Técnico · Project Manager</p>
+            <h1 class="hero__title">Gustavo Adolfo <span class="hero__title--accent">Tobías Ramírez</span></h1>
+            <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas (UMG) — Arquitecto de software, desarrollador fullstack y líder de equipos universitarios. Especializado en C++, Java, C#, Python, TypeScript y UM++.</p>
+            <div class="hero__actions">
+                <a href="{{ base_url }}/proyectos" class="btn btn--primary">Ver Proyectos</a>
+                <a href="{{ base_url }}/noticias" class="btn btn--secondary">Leer Noticias</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section highlight">
+    <div class="container">
+        <div class="highlight__card">
+            <h2 class="highlight__title">Proyecto Estrella: API Python + Compilador Java + UM++</h2>
+            <p class="highlight__description">Pipeline completo: lenguaje <strong>UM++</strong> (creación propia) → compilador Java (AST + análisis semántico) → API Python (FastAPI + WebSockets) → comandos al <strong>Batirrover</strong>.</p>
+            <ul class="highlight__features">
+                <li>Lenguaje UM++: tipado estático, inferencia, pattern matching</li>
+                <li>Compilador Java: AST, análisis semántico, generación bytecode</li>
+                <li>API Python: FastAPI, WebSockets, comunicación serial</li>
+                <li>Pipeline automatizado: IDE → Compilador → Robot</li>
+            </ul>
+            <div class="highlight__links">
+                <a href="https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" class="btn btn--ghost" target="_blank">Ver Repositorio</a>
+                <a href="https://github.com/ZelderD-12/PF-LFA.git" class="btn btn--ghost" target="_blank">Repo Batirrover</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Acerca de Mí</h2>
+            <p class="section__subtitle">Mi trayectoria y enfoque de trabajo</p>
+        </header>
+        <div class="about__grid">
+            <article class="about__card">
+                <h3 class="about__card-title">Perfil Profesional</h3>
+                <p class="about__card-text">Estudiante de Ingeniería en Sistemas (UMG), 22 años. Combino desarrollo fullstack con liderazgo técnico y gestión de proyectos. He liderado 4 proyectos universitarios desde la arquitectura hasta la entrega, coordinando equipos de 4-5 personas bajo metodologías ágiles.</p>
+            </article>
+            <article class="about__card">
+                <h3 class="about__card-title">Rol Dual</h3>
+                <p class="about__card-text">En cada proyecto asumo: <strong>Arquitecto + Fullstack Developer</strong> (diseño sistema, APIs, firmware, UI, BD) y <strong>Team Lead / PM</strong> (planificación sprints, code reviews, gestión riesgos, entregas a tiempo).</p>
+            </article>
+            <article class="about__card">
+                <h3 class="about__card-title">Enfoque Técnico</h3>
+                <p class="about__card-text">Código limpio, arquitectura modular, documentación viva, testing temprano. Me interesa la intersección de sistemas embebidos, compiladores y desarrollo web. Creé UM++ para explorar diseño de lenguajes y robótica real.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Contacto</h2>
+            <p class="section__subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
+        </header>
+        <div class="contact__info">
+            <ul class="contact__list">
+                <li class="contact__item"><a href="mailto:tobiasgusito@gmail.com" class="contact__link">tobiasgusito@gmail.com</a></li>
+                <li class="contact__item"><a href="tel:+50251151685" class="contact__link">+502 5115 1685</a></li>
+                <li class="contact__item"><a href="https://github.com/OmegaKerveus7" class="contact__link" target="_blank">GitHub: OmegaKerveus7</a></li>
+                <li class="contact__item"><a href="https://github.com/ZelderD-12" class="contact__link" target="_blank">GitHub: ZelderD-12</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

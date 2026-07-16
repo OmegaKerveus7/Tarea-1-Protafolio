@@ -1,0 +1,60 @@
+[
+    {
+        "id": "batirrover",
+        "title": "Batirrover",
+        "shortDescription": "Rover autónomo para exploración con arquitectura modular, control de motores, navegación autónoma y comunicación serial. Incluye pipeline API Python + Compilador Java + UM++.",
+        "period": "Febrero – Marzo 2025",
+        "role": "Arquitecto de Sistema + Fullstack Developer + Team Lead (4 personas)",
+        "category": "robotics",
+        "stack": ["C++", "Python", "ROS", "Arduino", "ESP32", "Java", "UM++"],
+        "innovation": "Pipeline completo: Lenguaje UM++ → Compilador Java → API Python → Comandos al robot",
+        "repos": [
+            { "name": "PF-LFA (Código Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" },
+            { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador UM++)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "datacenter",
+        "title": "Datacenter Funcional + Software de Gestión",
+        "shortDescription": "Maqueta física funcional de datacenter con rack, servidores, UPS y refrigeración, más un software completo de gestión con monitoreo en tiempo real.",
+        "period": "Febrero – Marzo 2025 (paralelo a Batirrover)",
+        "role": "Arquitecto de Infraestructura + Fullstack Developer + Team Lead",
+        "category": "infrastructure",
+        "stack": ["Python", "Flask", "Linux", "Docker", "HTML", "CSS", "JavaScript", "SQLite", "Raspberry Pi", "Redes"],
+        "innovation": "Integración de infraestructura física con software de gestión web en tiempo real",
+        "repos": [
+            { "name": "Datacenter_Grupo3- (Código completo)", "url": "https://github.com/OmegaKerveus7/Datacenter_Grupo3-.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "robot-busqueda",
+        "title": "Robot de Búsqueda con Evitación de Obstáculos",
+        "shortDescription": "Robot autónomo para búsqueda de objetos con evitación de obstáculos en tiempo real. Control remoto desde Python con interfaz gráfica. Arquitectura modular multicapa.",
+        "period": "Proyecto Final – Electrónica Digital",
+        "role": "Arquitecto de Sistema + Fullstack Developer + Team Lead",
+        "category": "robotics",
+        "stack": ["C/C++", "Python", "Arduino", "ESP32", "Sensores Ultrasónicos", "Sensores IR", "PID Control"],
+        "innovation": "Arquitectura multicapa con máquina de estados para navegación autónoma",
+        "repos": [
+            { "name": "Proyecto-Final-Electrónica-Digital (Código completo)", "url": "https://github.com/OmegaKerveus7/Proyecto-Final-de-Electr-nica-Digital.git" }
+        ],
+        "featured": true
+    },
+    {
+        "id": "api-compilador",
+        "title": "API Python + Compilador Java + Lenguaje UM++",
+        "shortDescription": "Pipeline completo para control remoto del Batirrover: lenguaje UM++ (creación propia), compilador en Java con AST y análisis semántico, API en Python con WebSockets.",
+        "period": "Febrero – Marzo 2025",
+        "role": "Diseñador de Lenguaje + Compilador Developer + API Developer",
+        "category": "compilers",
+        "stack": ["Java", "Python", "FastAPI", "WebSockets", "ANTLR", "AST"],
+        "innovation": "Lenguaje de programación propio (UM++) con compilador en Java integrado a API Python para control robótico",
+        "repos": [
+            { "name": "COMPI-PF-CREDENCIALESROBOT (API + Compilador)", "url": "https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" },
+            { "name": "PF-LFA (Batirrover)", "url": "https://github.com/ZelderD-12/PF-LFA.git" }
+        ],
+        "featured": true
+    }
+]

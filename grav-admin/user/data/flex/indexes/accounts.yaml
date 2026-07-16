@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1784239305
+count: 1
+index:
+  gustavo:
+    storage_key: gustavo
+    storage_timestamp: 1784239115
+    key: gustavo
+    email: tobiasgusito@gmail.com

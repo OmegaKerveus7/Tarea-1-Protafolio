@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Gustavo Adolfo Tobías Ramírez">
     <title>Gustavo Tobías | Portafolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo"><span class="nav__logo-text">GTR</span></a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menú">
-                <span class="nav__toggle-icon"></span>
-            </button>
-            <ul class="nav__menu" id="nav-menu">
+            <a href="index.html" class="nav__logo">Tarea de Desarrollo Web</a>
+            <button class="nav__toggle" id="navToggle">☰</button>
+            <ul class="nav__menu" id="navMenu">
                 <li><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
                 <li><a href="proyectos.html" class="nav__link">Proyectos</a></li>
                 <li><a href="noticias.html" class="nav__link">Noticias</a></li>
                 <li><a href="#contacto" class="nav__link">Contacto</a></li>
-                <li>
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Modo oscuro" type="button">
-                        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
-                        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-                    </button>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="container hero__grid">
-                <div class="hero__content">
-                    <p class="hero__badge"><span class="hero__badge-dot"></span> Desarrollador Fullstack · Líder Técnico · Project Manager</p>
-                    <h1 class="hero__title">Gustavo Adolfo <span class="hero__title--accent">Tobías Ramírez</span></h1>
-                    <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas (UMG) — Arquitecto de software, desarrollador fullstack y líder de equipos universitarios. Especializado en C++, Java, C#, Python, TypeScript y UM++.</p>
-                    <div class="hero__actions">
-                        <a href="proyectos.html" class="btn btn--primary">Ver Proyectos</a>
-                        <a href="noticias.html" class="btn btn--secondary">Leer Noticias</a>
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <p class="hero__badge">Desarrollador Fullstack · Lider Tecnico · Project Manager</p>
+                        <h1 class="hero__title">Gustavo Adolfo <span class="hero__title--accent">Tobias Ramirez</span></h1>
+                        <p class="hero__subtitle">Estudiante de Ingenieria en Sistemas (UMG). Especializado en C++, Java, Python y desarrollo fullstack.</p>
+                        <div class="hero__actions">
+                            <a href="proyectos.html" class="btn btn--primary">Ver Proyectos</a>
+                            <a href="noticias.html" class="btn btn--secondary">Leer Noticias</a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="img/Gustavo.jpg" alt="Gustavo Adolfo Tobias Ramirez" class="hero__photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Acerca de Mi</h2>
+                    <p class="section__subtitle">Mi trayectoria y enfoque de trabajo</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <img src="img/Gustavo.jpg" alt="Gustavo Tobias" class="about__photo">
+                        <h3 class="about-card__title">Perfil</h3>
+                        <p class="about-card__text">22 años, estudiante de Ingenieria en Sistemas. He liderado 4 proyectos universitarios desde la arquitectura hasta la entrega.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 class="about-card__title">Rol</h3>
+                        <p class="about-card__text">Arquitecto + Fullstack Developer + Team Lead. Diseño sistemas, APIs, firmware y coordino equipos agiles.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 class="about-card__title">Enfoque</h3>
+                        <p class="about-card__text">Codigo limpio, arquitectura modular, documentacion y testing. Cree el lenguaje UM++ para explorar robotica.</p>
                     </div>
                 </div>
             </div>
@@ -49,95 +66,58 @@
 
         <section class="section highlight">
             <div class="container">
-                <div class="highlight__card">
-                    <h2 class="highlight__title">Proyecto Estrella: API Python + Compilador Java + UM++</h2>
-                    <p class="highlight__description">Pipeline completo: lenguaje <strong>UM++</strong> (creación propia) → compilador Java (AST + análisis semántico) → API Python (FastAPI + WebSockets) → comandos al <strong>Batirrover</strong>.</p>
-                    <ul class="highlight__features">
-                        <li>Lenguaje UM++: tipado estático, inferencia, pattern matching</li>
-                        <li>Compilador Java: AST, análisis semántico, generación bytecode</li>
-                        <li>API Python: FastAPI, WebSockets, comunicación serial</li>
-                        <li>Pipeline automatizado: IDE → Compilador → Robot</li>
-                    </ul>
-                    <div class="highlight__links">
-                        <a href="https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" class="btn btn--ghost" target="_blank">Ver Repositorio</a>
-                        <a href="https://github.com/ZelderD-12/PF-LFA.git" class="btn btn--ghost" target="_blank">Repo Batirrover</a>
-                    </div>
+                <div class="section__header">
+                    <h2 class="section__title">Proyecto Estrella</h2>
+                    <p class="section__subtitle">API Python + Compilador Java + UM++</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="section about">
-            <div class="container">
-                <header class="section__header">
-                    <h2 class="section__title">Acerca de Mí</h2>
-                    <p class="section__subtitle">Mi trayectoria y enfoque de trabajo</p>
-                </header>
-                <div class="about__grid">
-                    <article class="about__card">
-                        <h3 class="about__card-title">Perfil Profesional</h3>
-                        <p class="about__card-text">Estudiante de Ingeniería en Sistemas (UMG), 22 años. Combino desarrollo fullstack con liderazgo técnico y gestión de proyectos. He liderado 4 proyectos universitarios desde la arquitectura hasta la entrega, coordinando equipos de 4-5 personas bajo metodologías ágiles.</p>
-                    </article>
-                    <article class="about__card">
-                        <h3 class="about__card-title">Rol Dual</h3>
-                        <p class="about__card-text">En cada proyecto asumo: <strong>Arquitecto + Fullstack Developer</strong> (diseño sistema, APIs, firmware, UI, BD) y <strong>Team Lead / PM</strong> (planificación sprints, code reviews, gestión riesgos, entregas a tiempo).</p>
-                    </article>
-                    <article class="about__card">
-                        <h3 class="about__card-title">Enfoque Técnico</h3>
-                        <p class="about__card-text">Código limpio, arquitectura modular, documentación viva, testing temprano. Me interesa la intersección de sistemas embebidos, compiladores y desarrollo web. Creé UM++ para explorar diseño de lenguajes y robótica real.</p>
-                    </article>
+                <div class="highlight__card">
+                    <p>Pipeline completo: lenguaje UM++ → compilador Java → API Python (FastAPI) → comandos al robot Batirrover.</p>
+                    <div class="highlight__links">
+                        <a href="https://github.com/ZelderD-12/COMPI-PF-CREDENCIALESROBOT.git" class="btn btn--secondary" target="_blank">Ver Repositorio</a>
+                        <a href="https://github.com/ZelderD-12/PF-LFA.git" class="btn btn--secondary" target="_blank">Repo Batirrover</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contacto" class="section">
             <div class="container">
-                <header class="section__header">
+                <div class="section__header">
                     <h2 class="section__title">Contacto</h2>
                     <p class="section__subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
-                </header>
-                <div class="contact__info">
-                    <ul class="contact__list">
-                        <li class="contact__item"><a href="mailto:tobiasgusito@gmail.com" class="contact__link">tobiasgusito@gmail.com</a></li>
-                        <li class="contact__item"><a href="tel:+50251151685" class="contact__link">+502 5115 1685</a></li>
-                        <li class="contact__item"><a href="https://github.com/OmegaKerveus7" class="contact__link" target="_blank">GitHub: OmegaKerveus7</a></li>
-                        <li class="contact__item"><a href="https://github.com/ZelderD-12" class="contact__link" target="_blank">GitHub: ZelderD-12</a></li>
-                    </ul>
                 </div>
+                <ul class="contact-list">
+                    <li class="contact-item"><a href="mailto:tobiasgusito@gmail.com">tobiasgusito@gmail.com</a></li>
+                    <li class="contact-item"><a href="tel:+50251151685">+502 5115 1685</a></li>
+                    <li class="contact-item"><a href="https://github.com/OmegaKerveus7" target="_blank">GitHub: OmegaKerveus7</a></li>
+                    <li class="contact-item"><a href="https://github.com/ZelderD-12" target="_blank">GitHub: ZelderD-12</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container footer__grid">
-            <div class="footer__brand">
-                <a href="index.html" class="footer__logo"><span class="footer__logo-text">GTR</span></a>
-                <p class="footer__tagline">Desarrollador Fullstack · Tech Lead · Project Manager</p>
-                <p class="footer__copyright">© <span id="year"></span> Gustavo Adolfo Tobías Ramírez.</p>
+            <div>
+                <a href="index.html" class="footer__logo">GTR</a>
+                <p class="footer__tagline">Desarrollador Fullstack · Programador Junior · PM</p>
+                <p class="footer__copyright"> <span id="year"></span> Gustavo Adolfo Tobias Ramirez.</p>
             </div>
-            <nav class="footer__nav">
-                <h4 class="footer__nav-title">Navegación</h4>
+            <div>
+                <h4 class="footer__nav-title">Navegacion</h4>
                 <ul class="footer__nav-list">
                     <li><a href="index.html" class="footer__nav-link">Inicio</a></li>
                     <li><a href="proyectos.html" class="footer__nav-link">Proyectos</a></li>
                     <li><a href="noticias.html" class="footer__nav-link">Noticias</a></li>
                     <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
                 </ul>
-            </nav>
-            <nav class="footer__nav">
-                <h4 class="footer__nav-title">Proyectos</h4>
-                <ul class="footer__nav-list">
-                    <li><a href="proyectos.html" class="footer__nav-link">Batirrover</a></li>
-                    <li><a href="proyectos.html" class="footer__nav-link">Datacenter</a></li>
-                    <li><a href="proyectos.html" class="footer__nav-link">Robot Búsqueda</a></li>
-                    <li><a href="proyectos.html" class="footer__nav-link">API + Compilador</a></li>
-                </ul>
-            </nav>
-            <div class="footer__social">
+            </div>
+            <div>
                 <h4 class="footer__nav-title">Conectar</h4>
                 <ul class="footer__social-list">
-                    <li><a href="mailto:tobiasgusito@gmail.com" class="footer__social-link" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
-                    <li><a href="https://github.com/OmegaKerveus7" class="footer__social-link" aria-label="GitHub" target="_blank"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></li>
-                    <li><a href="https://github.com/ZelderD-12" class="footer__social-link" aria-label="GitHub Sec" target="_blank"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a></li>
+                    <li><a href="mailto:tobiasgusito@gmail.com" class="footer__social-link">Email</a></li>
+                    <li><a href="https://github.com/OmegaKerveus7" class="footer__social-link" target="_blank">GitHub</a></li>
+                    <li><a href="https://github.com/ZelderD-12" class="footer__social-link" target="_blank">GitHub</a></li>
                 </ul>
             </div>
         </div>

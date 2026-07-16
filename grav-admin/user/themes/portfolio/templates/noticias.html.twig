@@ -1,0 +1,25 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block meta %}
+<meta name="description" content="Noticias y artículos técnicos de Gustavo Adolfo Tobías Ramírez">
+{% endblock %}
+
+{% block title %}Noticias | Gustavo Tobías{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="page-hero__badge">Blog Técnico</p>
+        <h1 class="page-hero__title">Noticias & Artículos</h1>
+        <p class="page-hero__description">Documentación de proyectos, análisis de herramientas, aprendizajes y opinión sobre desarrollo de software.</p>
+    </div>
+</section>
+
+<section class="section blog">
+    <div class="container">
+        <div class="blog__main">
+            <div class="blog__grid" id="blog-grid"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

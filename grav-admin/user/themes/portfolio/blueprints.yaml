@@ -1,0 +1,9 @@
+name: Portfolio
+version: 1.0.0
+description: "Tema personalizado para el portafolio de Gustavo Tobías"
+icon: user
+author:
+  name: Gustavo Tobías
+  email: tobiasgusito@gmail.com
+homepage: null
+license: MIT
