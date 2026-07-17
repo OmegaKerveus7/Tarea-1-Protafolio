@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1784240332,
-    'checksum' => 'bf4443d94ee497005645c662ae801fb0',
+    'timestamp' => 1784248685,
+    'checksum' => 'e7017d522debbe06247f7fa065e5313d',
     'files' => [
         'system/blueprints/config' => [
             'backups' => [
@@ -77,6 +77,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/alpha' => [
+                'file' => 'user/themes/alpha/blueprints.yaml',
+                'modified' => 1784246871
+            ],
             'themes/portfolio' => [
                 'file' => 'user/themes/portfolio/blueprints.yaml',
                 'modified' => 1784237193
@@ -6977,6 +6981,13 @@ function generateWebhookToken() {
                 'name' => 'plugins.shortcode-core.shortcode_tabs',
                 'validation' => 'strict'
             ],
+            'themes.alpha' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
             'themes.portfolio' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -7933,6 +7944,7 @@ function generateWebhookToken() {
                 ]
             ],
             'themes' => [
+                'alpha' => 'themes.alpha',
                 'portfolio' => 'themes.portfolio',
                 'quark2' => [
                     'theme-mode' => 'themes.quark2.theme-mode',

@@ -3,7 +3,7 @@ return [
     '@class' => 'Grav\\Common\\Service\\ConfigServiceProvider',
     'type' => 'config',
     'environment' => 'localhost',
-    'timestamp' => 1784240332,
+    'timestamp' => 1784248684,
     'check_interval' => 2,
     'directories' => [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config' => 1784239342,
@@ -20,7 +20,8 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\login' => 1784236861,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\problems' => 1784236845,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\shortcode-core' => 1784236849,
-        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes' => 1784237186,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes' => 1784246871,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\alpha' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\portfolio' => 1784239216,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\quark2' => 1784236792
     ],
@@ -28,7 +29,7 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/media.yaml' => 1784090298,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/plugins/api.yaml' => 1784238984,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/site.yaml' => 1784237227,
-        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/system.yaml' => 1784240330,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/system.yaml' => 1784248684,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/versions.yaml' => 1784237248,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/config/backups.yaml' => 1784090298,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/config/media.yaml' => 1784090298,
@@ -48,6 +49,7 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/login/login.yaml' => 1784236855,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/problems/problems.yaml' => 1784236842,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/shortcode-core/shortcode-core.yaml' => 1784236845,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/alpha/alpha.yaml' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/portfolio/portfolio.yaml' => 1784237192,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/quark2/quark2.yaml' => 1784090298
     ],
@@ -67,7 +69,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1784240330
+                'modified' => 1784248684
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -151,6 +153,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/alpha' => [
+                'file' => 'user/themes/alpha/alpha.yaml',
+                'modified' => 1784246871
+            ],
             'themes/portfolio' => [
                 'file' => 'user/themes/portfolio/portfolio.yaml',
                 'modified' => 1784237192

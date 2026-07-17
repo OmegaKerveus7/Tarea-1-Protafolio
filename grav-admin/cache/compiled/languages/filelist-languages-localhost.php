@@ -3,7 +3,7 @@ return [
     '@class' => 'Grav\\Common\\Service\\ConfigServiceProvider',
     'type' => 'languages',
     'environment' => 'localhost',
-    'timestamp' => 1784240388,
+    'timestamp' => 1784248686,
     'check_interval' => 2,
     'directories' => [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/languages' => 1784236749,

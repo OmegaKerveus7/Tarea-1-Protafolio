@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1784240332,
-    'checksum' => '8fedac4620ab584b68a434c35a5eccb3',
+    'timestamp' => 1784248685,
+    'checksum' => '09a0db1909f3a9b2ced2be3e3f985392',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1784240330
+                'modified' => 1784248684
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -103,6 +103,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/alpha' => [
+                'file' => 'user/themes/alpha/alpha.yaml',
+                'modified' => 1784246871
+            ],
             'themes/portfolio' => [
                 'file' => 'user/themes/portfolio/portfolio.yaml',
                 'modified' => 1784237192
@@ -115,6 +119,51 @@ return [
     ],
     'data' => [
         'themes' => [
+            'alpha' => [
+                'enabled' => true,
+                'social_links' => [
+                    0 => [
+                        'title' => 'Twitter',
+                        'icon' => 'twitter',
+                        'url' => '#'
+                    ],
+                    1 => [
+                        'title' => 'Facebook',
+                        'icon' => 'facebook',
+                        'url' => '#'
+                    ],
+                    2 => [
+                        'title' => 'Instagram',
+                        'icon' => 'instagram',
+                        'url' => '#'
+                    ],
+                    3 => [
+                        'title' => 'Github',
+                        'icon' => 'github',
+                        'url' => '#'
+                    ],
+                    4 => [
+                        'title' => 'Dribbble',
+                        'icon' => 'dribbble',
+                        'url' => '#'
+                    ],
+                    5 => [
+                        'title' => 'Google+',
+                        'icon' => 'google-plus',
+                        'url' => '#'
+                    ]
+                ],
+                'streams' => [
+                    'schemes' => [
+                        'theme' => [
+                            'type' => 'ReadOnlyStream',
+                            'paths' => [
+                                0 => 'user/themes/alpha'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
             'portfolio' => [
                 'enabled' => true
             ],

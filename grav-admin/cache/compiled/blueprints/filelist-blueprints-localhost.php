@@ -3,7 +3,7 @@ return [
     '@class' => 'Grav\\Common\\Service\\ConfigServiceProvider',
     'type' => 'blueprints',
     'environment' => 'localhost',
-    'timestamp' => 1784240332,
+    'timestamp' => 1784248685,
     'check_interval' => 2,
     'directories' => [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/blueprints/config' => 1784236748,
@@ -18,7 +18,8 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\login' => 1784236861,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\problems' => 1784236845,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins\\shortcode-core' => 1784236849,
-        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes' => 1784237186,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes' => 1784246871,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\alpha' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\portfolio' => 1784239216,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\quark2' => 1784236792
     ],
@@ -40,6 +41,7 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/login/blueprints.yaml' => 1784236855,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/problems/blueprints.yaml' => 1784236843,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/shortcode-core/blueprints.yaml' => 1784236845,
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/alpha/blueprints.yaml' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/portfolio/blueprints.yaml' => 1784237193,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/quark2/blueprints.yaml' => 1784090298
     ],
@@ -117,6 +119,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/alpha' => [
+                'file' => 'user/themes/alpha/blueprints.yaml',
+                'modified' => 1784246871
+            ],
             'themes/portfolio' => [
                 'file' => 'user/themes/portfolio/blueprints.yaml',
                 'modified' => 1784237193

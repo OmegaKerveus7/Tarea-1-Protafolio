@@ -2,25 +2,26 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1784239108,
-    'size' => 1085,
+    'modified' => 1784249142,
+    'size' => 1312,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1784239108,
-        'count' => 5,
+        'timestamp' => 1784249142,
+        'count' => 6,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1784237186,
+                'storage_timestamp' => 1784248684,
                 'children' => [
                     '01.home' => 1784237224,
                     '02.proyectos' => 1784237224,
                     '02.typography' => 1784236791,
-                    '03.noticias' => 1784237225
+                    '03.noticias' => 1784237225,
+                    '04.servicios' => 1784248757
                 ],
-                'checksum' => 'a41c9893fe40676007dc9f7d18c8781d'
+                'checksum' => 'f700979dc3b95589fd773078b6541ec9'
             ],
             '01.home' => [
                 'key' => 'home',
@@ -69,6 +70,18 @@ return [
                     ]
                 ],
                 'checksum' => 'ea0d0ffffef90583e2e20b3a9d288aca'
+            ],
+            '04.servicios' => [
+                'key' => 'servicios',
+                'storage_key' => '04.servicios',
+                'template' => 'default',
+                'storage_timestamp' => 1784248757,
+                'markdown' => [
+                    '' => [
+                        'default' => 1784248757
+                    ]
+                ],
+                'checksum' => '5767b23c2b7d7c5f11fbd5500e3845be'
             ]
         ]
     ]

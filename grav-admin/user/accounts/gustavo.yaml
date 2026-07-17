@@ -16,3 +16,5 @@ hashed_password: $2y$12$UEaD6K3pRt9q6zrZAZGt/.It6hXOgza3bu1f98xsGZV5eFKFi1/u.
 admin_next:
   preferences:
     colorMode: dark
+    pagesViewMode: list
+    themesViewMode: table
