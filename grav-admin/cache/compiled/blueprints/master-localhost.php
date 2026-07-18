@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1784248685,
-    'checksum' => 'e7017d522debbe06247f7fa065e5313d',
+    'timestamp' => 1784387719,
+    'checksum' => '4030c6c048fa23f49574668c378fd457',
     'files' => [
         'system/blueprints/config' => [
             'backups' => [
@@ -87,7 +87,7 @@ return [
             ],
             'themes/quark2' => [
                 'file' => 'user/themes/quark2/blueprints.yaml',
-                'modified' => 1784090298
+                'modified' => 1784387717
             ]
         ]
     ],

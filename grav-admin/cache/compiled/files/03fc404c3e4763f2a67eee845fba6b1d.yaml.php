@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/quark2/blueprints.yaml',
-    'modified' => 1784090298,
+    'modified' => 1784387717,
     'size' => 3449,
     'data' => [
         'name' => 'Quark 2',
         'slug' => 'quark2',
         'type' => 'theme',
-        'version' => '1.1.4',
+        'version' => '1.1.5',
         'description' => 'The modernized Grav default theme — Blades CSS foundation, Cal.com-inspired aesthetic, with light/dark/auto mode and Font Awesome 7 icons.',
         'icon' => 'meteor',
         'author' => [

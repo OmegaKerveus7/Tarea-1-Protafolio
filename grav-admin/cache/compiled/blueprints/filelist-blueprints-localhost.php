@@ -3,7 +3,7 @@ return [
     '@class' => 'Grav\\Common\\Service\\ConfigServiceProvider',
     'type' => 'blueprints',
     'environment' => 'localhost',
-    'timestamp' => 1784248685,
+    'timestamp' => 1784387719,
     'check_interval' => 2,
     'directories' => [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/blueprints/config' => 1784236748,
@@ -21,7 +21,7 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\alpha' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\portfolio' => 1784239216,
-        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\quark2' => 1784236792
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes\\quark2' => 1784387717
     ],
     'file_mtimes' => [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/system/blueprints/config/backups.yaml' => 1784090298,
@@ -43,7 +43,7 @@ return [
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/plugins/shortcode-core/blueprints.yaml' => 1784236845,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/alpha/blueprints.yaml' => 1784246871,
         'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/portfolio/blueprints.yaml' => 1784237193,
-        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/quark2/blueprints.yaml' => 1784090298
+        'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/themes/quark2/blueprints.yaml' => 1784387717
     ],
     'files' => [
         'system/blueprints/config' => [
@@ -129,7 +129,7 @@ return [
             ],
             'themes/quark2' => [
                 'file' => 'user/themes/quark2/blueprints.yaml',
-                'modified' => 1784090298
+                'modified' => 1784387717
             ]
         ]
     ]

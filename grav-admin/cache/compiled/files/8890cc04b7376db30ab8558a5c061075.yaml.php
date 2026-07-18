@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/tobia/Desktop/Programas/Programas VSC/DesarrolloWeb/Clase 1/Tarea 1/grav-admin/user/config/system.yaml',
-    'modified' => 1784248684,
+    'modified' => 1784387718,
     'size' => 380,
     'data' => [
         'home' => [
